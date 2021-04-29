@@ -1,0 +1,14 @@
+说明由decltype 指定类型和由auto指定类型有何区别。
+请举一个例子，decltype指定的类型与auto指定的类型一样；
+再举一个例子，decltype指定的类型与auto指定的类型不一样。
+
+如果使用引用类型，auto会识别为其引用对象的类型；decltype会识别为引用的类型；
+int ci=0,&r=ci;
+auto a=r;//a int型
+decltype (r) b;//b:int&型
+
+decltype(())的差别，变成表达式后其类型即为引用；
+顶层const差异
+const int ci=0,&r=ci;
+auto a=r;//a int型
+decltype (r) b;//b:const int&型

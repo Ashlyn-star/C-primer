@@ -1,0 +1,12 @@
+判断下列定义推断出的类型是什么，然后编写程序进行验证。
+
+const int i = 42;
+整型常量
+auto j = i;
+整型，j可改变值
+const auto &k = i; 
+固定引用，不可以通过K改变i的值
+auto *p = &i; 
+p：指向常量的指针
+const auto j2 = i, &k2 = i;
+J2整形常量，k2固定引用

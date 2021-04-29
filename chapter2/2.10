@@ -1,0 +1,9 @@
+std::string global_str;
+字符串
+int global_int;
+整型
+int main()
+{
+    int local_int;   //整形
+    std::string local_str;//字符串类型
+}

@@ -1,0 +1,12 @@
+说明下面的这些定义是什么意思，挑出其中不合法的。
+
+int i, *const cp;
+i是整型变量，cp是指向整形的常指针，但是不合法，要求初始化
+int *p1, *const p2;
+p1是指向整型的指针，p2不合法初始化
+const int ic, &r = ic;
+不合法，ic没有初始化
+const int *const p3;
+初始化，不合法
+const int *p;
+合法，p为指向常整型的指针（不可通过P改变指向的值）

@@ -1,0 +1,12 @@
+下面哪些语句是合法的？如果不合法，请说明为什么？
+
+const int buf;
+不合法，const必须初始化
+int cnt = 0;
+合法，定义cnt并赋值为0
+const int sz = cnt;
+合法，sz为常量
+++cnt;
+合法，变量可运算
+++sz;
+不合法，sz为常量
