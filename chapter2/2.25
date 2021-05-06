@@ -1,0 +1,5 @@
+说明下列变量的类型和值。
+
+(a) int* ip, i, &r = i;//int的指针，int类型，int的引用
+(b) int i, *ip = 0;//int类型，int类型的指针
+(c) int* ip, ip2;//int类型指针，int类型
