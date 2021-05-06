@@ -1,0 +1,8 @@
+下列vector对象的定义有不正确的吗？如果有，请指出来。对于正确的，描述其执行结果；对于不正确的，说明其错误的原因。
+
+vector<vector<int>> ivec;
+正确
+vector<string> svec = ivec;
+错误，两者类型不同，不可以拷贝赋值
+vector<string> svec(10, "null");
+正确，string类型，10个，初始值为“null”

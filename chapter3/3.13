@@ -1,0 +1,9 @@
+下列的vector对象各包含多少个元素？这些元素的值分别是多少？
+
+vector<int> v1;                   0个
+vector<int> v2(10);               10个 值为0
+vector<int> v3(10, 42);           10个 值为42
+vector<int> v4{ 10 };             1个  值为10
+vector<int> v5{ 10, 42 };         2个  值为10，42
+vector<string> v6{ 10 };          10个 值为空串
+vector<string> v7{ 10, "hi" };    10个 值为“hi”

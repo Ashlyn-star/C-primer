@@ -1,0 +1,9 @@
+下面的程序是何含义，程序的输出结果是什么？
+
+const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
+const char *cp = ca;
+while (*cp) {
+    cout << *cp << endl;
+    ++cp;
+}
+不会停止，没有结束符

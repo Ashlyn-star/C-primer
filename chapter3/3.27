@@ -1,0 +1,7 @@
+假设txt_size 是一个无参函数，它的返回值是int。请回答下列哪个定义是非法的，为什么？
+
+unsigned buf_size = 1024; 
+(a) int ia[buf_size];非法，非常量
+(b) int ia[4 * 7 - 14];合法
+(c) int ia[txt_size()];若输出txt_size()是constexpr，则合法，否则非法
+(d) char st[11] = "fundamental";非法，12
