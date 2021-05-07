@@ -1,0 +1,6 @@
+溢出是何含义？写出三条将导致溢出的表达式。
+溢出即为超出其位数所能表达的值范围
+
+short svalue = 32767; ++svalue; // -32768
+unsigned uivalue = 0; --uivalue; // 4294967295
+unsigned short usvalue = 65535; ++usvalue; // 0

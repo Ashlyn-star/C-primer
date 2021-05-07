@@ -1,0 +1,5 @@
+说明下面这条表达式的含义。
+
+double slope = static_cast<double>(j/i);
+
+(j/i)强制转换为double型赋值给slope

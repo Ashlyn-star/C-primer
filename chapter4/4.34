@@ -1,0 +1,8 @@
+根据本节给出的变量定义，说明在下面的表达式中奖发生什么样的类型转换：
+
+(a) if (fval)
+float变换为bool；
+(b) dval = fval + ival;
+ival变换为float，结果变换为double
+(c) dval + ival * cval;
+cval变换为int，结果变换为double

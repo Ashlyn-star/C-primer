@@ -1,0 +1,9 @@
+本节的示例程序将成绩划分为 high pass、pass、和fail三种，它的依据是条件运算符满足右结合律。假如条件运算符满足的是左结合律，求值的过程将是怎样的？
+finalgrade = (grade > 90) ? “high pass” : (grade < 60) ? “fail” : “pass”;
+右结合：finalgrade = (grade > 90) ? “high pass” : （(grade < 60) ? “fail” : “pass”）;
+左结合：finalgrade = （(grade > 90) ? “high pass” : (grade < 60) ）? “fail” : “pass”;
+
+参考答案：
+if grade > 90,finalgrade = “high pass” ? “fail” : “pass”;
+finalgrade = “fail”;
+grade <= 90时，结果符合预期。

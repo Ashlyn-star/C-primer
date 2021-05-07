@@ -1,0 +1,12 @@
+假设 ptr 的类型是指向 int 的指针、vec 的类型是vector、ival 的类型是int，说明下面的表达式是何含义？如果有表达式不正确，为什么？应该如何修改？
+
+(a) ptr != 0 && *ptr++  
+ptr不是空指针，ptr指向对象不为0，ptr指向下一位
+(b) ival++ && ival
+ival不等于0，ival加1，加1后不为零
+(c) vec[ival++] <= vec[ival] 
+非法，未定义
+
+
+参考答案
+vec[ival] <= vec[ival+1]。

@@ -1,0 +1,17 @@
+假设有如下的定义：
+
+char cval;
+int ival;
+unsigned int ui;
+float fval;
+double dval;
+请回答在下面的表达式中发生了隐式类型转换吗？如果有，指出来。
+
+(a) cval = 'a' + 3;
+‘a’->int，int->char
+(b) fval = ui - ival * 1.0;
+ival->double,ui->double,double->float
+(c) dval = ui * fval;
+ui->float，float->double
+(d) cval = ival + fval + dval;
+ival->float,float->double,double->char
