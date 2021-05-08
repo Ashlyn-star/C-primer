@@ -9,7 +9,7 @@ using std::string;
 int main() {
 	char ch;
 	int aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0, emCnt = 0;
-	while (cin >> std::noskipws >> ch) { //noskipws => no skip whitespace(空白)noskipws 不是不忽略输入前的空格, 而是 不忽略 任意地方的空格,操作符noskipws会令输入运算符读取空白符，而不是跳过它们
+	while (cin >> std::noskipws >> ch) { //noskipws => no skip whitespace(空白)noskipws 不是不忽略输入前的空格, 而是不忽略任意地方的空格,操作符noskipws会令输入运算符读取空白符，而不是跳过它们
 		switch (ch)
 		{
 		case 'a':
