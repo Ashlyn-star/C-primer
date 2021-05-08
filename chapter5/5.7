@@ -1,0 +1,46 @@
+改写下列代码段中的错误。
+
+(a) if (ival1 != ival2) 
+		ival1 = ival2
+    else 
+    	ival1 = ival2 = 0;
+    错因：分号少了
+    改：
+    if (ival1 != ival2) 
+		ival1 = ival2；
+    else 
+    	ival1 = ival2 = 0;
+
+
+
+(b) if (ival < minval) 
+		minval = ival;
+    	occurs = 1;
+    错因：缺少大括号
+    改：
+    if (ival < minval) {
+		minval = ival;
+    	occurs = 1;
+    }
+
+
+(c) if (int ival = get_value())
+    	cout << "ival = " << ival << endl;
+    if (!ival)
+    	cout << "ival = 0\n";
+    错因：ival是局部有效
+    改：
+    int ival = get_value()；
+    if (ival)
+    	cout << "ival = " << ival << endl;
+    if (!ival)
+    	cout << "ival = 0\n";
+
+
+
+(d) if (ival = 0)
+    	ival = get_value();
+    错因：==少了一个=
+    改：
+    if (ival == 0)
+    	ival = get_value();

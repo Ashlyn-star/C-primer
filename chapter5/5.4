@@ -1,0 +1,12 @@
+说明下列例子的含义，如果存在问题，试着修改它。
+
+(a) while (string::iterator iter != s.end()) { /* . . . */ }
+无线循环，循环体中增加++iter
+
+
+(b) while (bool status = find(word)) { /* . . . */ }
+		if (!status) { /* . . . */ }
+if不属于while循环中，并且在循环中定义的status在if中不能使用，将status的定义放在while外
+
+
+

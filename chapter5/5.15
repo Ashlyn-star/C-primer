@@ -1,0 +1,26 @@
+说明下列循环的含义并改正其中的错误。
+
+(a) for (int ix = 0; ix != sz; ++ix) { /* ... */ }
+    if (ix != sz)
+    	// . . .
+ix仅仅用在for循环中
+改：
+    int ix ;
+    for (ix= 0; ix != sz; ++ix) { /* ... */ }
+    if (ix != sz)
+    	// . . .
+
+
+
+(b) int ix;
+    for (ix != sz; ++ix) { /* ... */ }
+for循环缺少语句
+改：
+    int ix;
+    for (；ix != sz; ++ix) { /* ... */ }
+
+
+(c) for (int ix = 0; ix != sz; ++ix, ++sz) { /*...*/ }
+for永远不停止
+改：
+for (int ix = 0; ix != sz; ++ix) { /*...*/ }
