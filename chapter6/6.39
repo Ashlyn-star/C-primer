@@ -1,0 +1,12 @@
+说明在下面的每组声明中第二条语句是何含义。如果有非法的声明，请指出来。
+
+(a) int calc(int, int);
+	int calc(const int, const int);
+	顶层const无法区分，非法；
+	改：重复声明可以，不可以重复定义。合法
+(b) int get();
+	double get();
+	除了输出类型不一致其他均一致会无法判断输出类型，非法
+(c) int *reset(int *);
+	double *reset(double *);
+	浮点类型的指针输出浮点类型的指针，函数重载，合法

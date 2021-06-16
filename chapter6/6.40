@@ -1,0 +1,6 @@
+下面的哪个声明是错误的？为什么？
+
+(a) int ff(int a, int b = 0, int c = 0);
+正确
+(b) char *init(int ht = 24, int wd, char bckgrnd);
+错误，作为声明，其默认参数右侧的所以形参必须有默认参数；

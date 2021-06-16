@@ -1,0 +1,38 @@
+请指出下列函数哪个有错误，为什么？应该如何修改这些错误呢？
+
+(a) int f() {
+          string s;
+          // ...
+          return s;
+    }
+    返回类型与声明不符合
+    改：
+    int f() {
+          int s;
+          // ...
+          return s;
+    }
+
+
+
+
+(b) f2(int i) { /* ... */ }
+缺少返回类型
+改：
+void f2(int i) { /* ... */ }
+
+
+
+
+(c) int calc(int v1, int v1) { /* ... */ }
+没有返回值，类型应该为空
+改：
+void calc(int v1, int v1) { /* ... */ }
+
+
+
+
+(d) double square (double x)  return x * x; 
+函数体要用大括号
+改:
+double square (double x) { return x * x; }

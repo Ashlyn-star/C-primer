@@ -1,0 +1,3 @@
+能把isShorter函数定义成constexpr函数吗？如果能，将它改写成constxpre函数；如果不能，说明原因。
+
+不能,

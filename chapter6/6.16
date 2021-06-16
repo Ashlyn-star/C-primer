@@ -1,0 +1,6 @@
+下面的这个函数虽然合法，但是不算特别有用。指出它的局限性并设法改善。
+
+bool is_empty(string& s) { return s.empty(); }
+局限性:常量string无法引用，主要的目的不是改变而是输出string是否为空，加上const
+
+bool is_empty(const string& s) { return s.empty(); }

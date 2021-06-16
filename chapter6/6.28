@@ -1,0 +1,4 @@
+在error_msg函数的第二个版本中包含ErrCode类型的参数，其中循环内的elem是什么类型？
+
+const std::string&
+initializer_list中元素永远是常量，elem是引用，绑定列表中元素

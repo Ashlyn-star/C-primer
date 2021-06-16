@@ -1,0 +1,13 @@
+下面的函数合法吗？如果合法，说明其功能；如果不合法，修改其中的错误并解释原因。
+
+int &get(int *array, int index) { return array[index]; }
+int main()
+{
+    int ia[10];
+    for (int i = 0; i != 10; ++i)
+        get(ia, i) = i;
+}
+
+返回的是数组特定元素的引用；输入数组和位置索引
+
+定义了一个10个元素的数值，遍历输出数组每个元素

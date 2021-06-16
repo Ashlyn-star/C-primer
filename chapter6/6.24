@@ -1,0 +1,13 @@
+描述下面这个函数的行为。如果代码中存在问题，请指出并改正。
+
+void print(const int ia[10])
+{
+	for (size_t i = 0; i != 10; ++i)
+		cout << ia[i] << endl;
+}
+
+打印包含10个常int元素的数组。
+
+参考答案：
+该函数传递的不是数组，是const int*，如果实参不是含10个元素的int数组，可能导致for循环数组越界。修改为：
+void print(const int (&ia)[10]) { /*...*/ }

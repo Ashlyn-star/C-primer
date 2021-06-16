@@ -1,0 +1,7 @@
+为下面的函数编写函数声明，从给定的名字中推测函数具备的功能。
+
+(a) 名为 compare 的函数，返回布尔值，两个参数都是 matrix 类的引用。
+bool compare(const matrix& a,const matrix& b)  推测比较两个matrix类对象，返回真假
+
+(b) 名为 change_val 的函数，返回vector的迭代器，有两个参数：一个是int，另一个是vector的迭代器。
+vector<int>::iterator change_val(int i,vector<int>::iterator);功能改变迭代器所指对象的值；

@@ -1,0 +1,6 @@
+修改arrPtr函数，使其返回数组的引用。
+
+decltype(arrStr)& arrPtr(int i)
+{
+          return (i % 2) ? odd : even;
+}
