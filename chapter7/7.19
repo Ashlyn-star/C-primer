@@ -1,0 +1,4 @@
+在你的Person 类中，你将把哪些成员声明成public 的？哪些声明成private 的？解释你这样做的原因。
+
+接口定义在public
+数据定义在private

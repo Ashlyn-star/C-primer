@@ -1,0 +1,5 @@
+使用class 和 struct 时有区别吗？如果有，是什么？
+
+两个的默认访问权限不同
+class默认private
+struct默认public
