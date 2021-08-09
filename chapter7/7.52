@@ -1,0 +1,12 @@
+使用2.6.1节的 Sales_data 类，解释下面的初始化过程。如果存在问题，尝试修改它。
+
+    Sales_data item = {"987-0590353403", 25, 15.99};
+
+    要设置聚合类
+    struct Sales_data {
+        std::string bookNo;
+        unsigned units_sold;
+        double revenue;
+    };
+
+    //为了啥才产生这种聚合类啊？
