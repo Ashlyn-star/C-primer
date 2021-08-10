@@ -1,0 +1,4 @@
+begin 和 cbegin 两个函数有什么不同？
+
+begin返回容器的iterator类型，需要写操作时使用；
+cbegin返回容器的const_iterator类型，当我们不需要写时使用。
