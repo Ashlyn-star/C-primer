@@ -1,0 +1,12 @@
+解释下面程序片段做了什么：
+
+vector<string> svec;
+svec.reserve(1024);
+string word;
+while (cin >> word)
+	svec.push_back(word);
+svec.resize(svec.size() + svec.size() / 2);
+
+
+定义了一个string类型的vector，并预留1024大小
+输入单词存放到容器中，更正大小为已经存储的大小外加它的一半
